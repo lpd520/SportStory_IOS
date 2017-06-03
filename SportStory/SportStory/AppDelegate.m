@@ -7,6 +7,10 @@
 //
 
 #import "AppDelegate.h"
+#import <AFNetworking.h>
+#import <RongIMKit/RongIMKit.h>
+#import "UIColor+Util.h"
+#import "UIView+Util.h"
 
 @interface AppDelegate ()
 
@@ -17,7 +21,75 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    [[AFNetworkReachabilityManager sharedManager] startMonitoring];
+
+    //初始化融云SDK
+    [[RCIM sharedRCIM] initWithAppKey:@"25wehl3u272kw"];
+    
+    
+    // Configure URLCache capacity
+    // Set URLCache to 3MB
+    NSURLCache *URLCache = [[NSURLCache alloc] initWithMemoryCapacity:5 * 1024 * 1024
+                                                         diskCapacity:3 * 1024 * 1024
+                                                             diskPath:nil];
+    [NSURLCache setSharedURLCache:URLCache];
+    
+    //控件外观设置
+    [self setupLookAndFeel];
+    
+    
+    
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    self.window.backgroundColor = [UIColor whiteColor];
+    
+    self.rootViewController = [[AHRootViewController alloc] init];
+    self.window.rootViewController = self.rootViewController;
+    
+    [self.window makeKeyAndVisible];
+
+    
+    
     return YES;
+}
+
+- (void)setupLookAndFeel{
+    
+    [UIApplication sharedApplication].statusBarHidden = NO;
+    
+    [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
+    
+    NSDictionary *navbarTitleTextAttributes = @{NSForegroundColorAttributeName:[UIColor whiteColor]};
+    [[UINavigationBar appearance] setTitleTextAttributes:navbarTitleTextAttributes];
+    [[UINavigationBar appearance] setTintColor:[UIColor whiteColor]];
+    
+    [[UITabBar appearance] setTintColor:[UIColor colorWithHex:0x24CF5F]];
+    [[UITabBarItem appearance] setTitleTextAttributes:@{NSForegroundColorAttributeName:[UIColor colorWithHex:0x24cf5f]} forState:UIControlStateSelected];
+    
+    [[UINavigationBar appearance] setBarTintColor:[UIColor navigationbarColor]];
+    [[UITabBar appearance] setBarTintColor:[UIColor titleBarColor]];
+    
+    [UISearchBar appearance].tintColor = [UIColor colorWithHex:0x15A230];
+    
+    [[UITextField appearanceWhenContainedIn:[UISearchBar class], nil] setCornerRadius:14.0];
+    [[UITextField appearanceWhenContainedIn:[UISearchBar class], nil] setAlpha:0.6];
+    
+    
+    UIPageControl *pageControl = [UIPageControl appearance];
+    pageControl.pageIndicatorTintColor = [UIColor colorWithHex:0xDCDCDC];
+    pageControl.currentPageIndicatorTintColor = [UIColor grayColor];
+    
+    [[UITextField appearance] setTintColor:[UIColor nameColor]];
+    [[UITextView appearance]  setTintColor:[UIColor nameColor]];
+    
+    
+    UIMenuController *menuController = [UIMenuController sharedMenuController];
+    [menuController setMenuVisible:YES animated:YES];
+    [menuController setMenuItems:@[
+                                   [[UIMenuItem alloc] initWithTitle:@"复制" action:NSSelectorFromString(@"copyText:")],
+                                   [[UIMenuItem alloc] initWithTitle:@"删除" action:NSSelectorFromString(@"deleteObject:")]
+                                   ]];
+
+    
 }
 
 

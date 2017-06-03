@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import <CoreData/CoreData.h>
+#import "AHRootViewController.h"
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
@@ -16,6 +17,10 @@
 @property (readonly, strong) NSPersistentContainer *persistentContainer;
 
 - (void)saveContext;
+
+//@property (nonatomic, strong) SCNavigationController *navigationController;
+@property (nonatomic, strong) AHRootViewController *rootViewController;
+@property (nonatomic, assign) UINavigationController *currentNavigationController;
 
 
 @end
