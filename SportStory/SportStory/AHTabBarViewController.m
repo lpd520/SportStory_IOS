@@ -9,6 +9,9 @@
 #import "AHTabBarViewController.h"
 #import "PDMyViewController.h"
 #import "AHMessageViewController.h"
+#import "AHNearByViewController.h"
+#import "AHDynamicViewController.h"
+#import "AHAddViewController.h"
 
 @interface AHTabBarViewController () <UITabBarControllerDelegate>
 
@@ -30,17 +33,41 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    PDMyViewController *my = [[PDMyViewController alloc] init];
-    my.tabBarItem.title = @"我的";
-    my.tabBarItem.selectedImage = [UIImage imageNamed:@"my"];
-    my.tabBarItem.image = [UIImage imageNamed:@"my"];
+    
+    AHNearByViewController *nearBy = [[AHNearByViewController alloc] init];
+    
+    nearBy.tabBarItem.title = @"附近";
+    nearBy.tabBarItem.selectedImage = [UIImage imageNamed:@"nearby"];
+    nearBy.tabBarItem.image = [UIImage imageNamed:@"nearby"];
+
+
+    AHDynamicViewController *dynamic = [[AHDynamicViewController alloc] init];
+    dynamic.tabBarItem.title = @"动态";
+    dynamic.tabBarItem.selectedImage = [UIImage imageNamed:@"dynamic"];
+    dynamic.tabBarItem.image = [UIImage imageNamed:@"dynamic"];
+    
+    AHAddViewController *add = [[AHAddViewController alloc] init];
+    add.tabBarItem.title = @"添加";
+    add.tabBarItem.selectedImage = [UIImage imageNamed:@"activity"];
+    add.tabBarItem.image = [UIImage imageNamed:@"activity"];
+
+    
     
     AHMessageViewController *message = [[AHMessageViewController alloc] init];
     message.tabBarItem.title = @"消息";
     message.tabBarItem.selectedImage = [UIImage imageNamed:@"message"];
     message.tabBarItem.image = [UIImage imageNamed:@"message"];
     
-    self.viewControllers = @[
+    PDMyViewController *my = [[PDMyViewController alloc] init];
+    my.tabBarItem.title = @"我的";
+    my.tabBarItem.selectedImage = [UIImage imageNamed:@"my"];
+    my.tabBarItem.image = [UIImage imageNamed:@"my"];
+    
+    
+    
+    self.viewControllers = @[nearBy,
+                             dynamic,
+                             add,
                              message,
                              my
                              ];

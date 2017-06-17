@@ -10,6 +10,10 @@
 		1941872553977096B0A0483B /* libPods-SportStoryTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8707E290C3189D8252109AC9 /* libPods-SportStoryTests.a */; };
 		1F125D971EF50AA8003BCA78 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F125D961EF50AA8003BCA78 /* Assets.xcassets */; };
 		1F125D9B1EF50BD1003BCA78 /* AHMessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F125D9A1EF50BD1003BCA78 /* AHMessageViewController.m */; };
+		1F125D9E1EF526B5003BCA78 /* AHNearByViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F125D9D1EF526B5003BCA78 /* AHNearByViewController.m */; };
+		1F125DA11EF526CD003BCA78 /* AHDynamicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F125DA01EF526CD003BCA78 /* AHDynamicViewController.m */; };
+		1F125DA41EF52715003BCA78 /* AHAddViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F125DA31EF52715003BCA78 /* AHAddViewController.m */; };
+		1F125DA71EF52832003BCA78 /* AHBasicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F125DA61EF52832003BCA78 /* AHBasicViewController.m */; };
 		1F5AA83A1ECFD7EF00338E53 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F5AA8391ECFD7EF00338E53 /* main.m */; };
 		1F5AA83D1ECFD7EF00338E53 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F5AA83C1ECFD7EF00338E53 /* AppDelegate.m */; };
 		1F5AA8431ECFD7EF00338E53 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F5AA8411ECFD7EF00338E53 /* Main.storyboard */; };
@@ -49,6 +53,14 @@
 		1F125D961EF50AA8003BCA78 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1F125D991EF50BD1003BCA78 /* AHMessageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AHMessageViewController.h; sourceTree = "<group>"; };
 		1F125D9A1EF50BD1003BCA78 /* AHMessageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AHMessageViewController.m; sourceTree = "<group>"; };
+		1F125D9C1EF526B5003BCA78 /* AHNearByViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AHNearByViewController.h; sourceTree = "<group>"; };
+		1F125D9D1EF526B5003BCA78 /* AHNearByViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AHNearByViewController.m; sourceTree = "<group>"; };
+		1F125D9F1EF526CD003BCA78 /* AHDynamicViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AHDynamicViewController.h; sourceTree = "<group>"; };
+		1F125DA01EF526CD003BCA78 /* AHDynamicViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AHDynamicViewController.m; sourceTree = "<group>"; };
+		1F125DA21EF52715003BCA78 /* AHAddViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AHAddViewController.h; sourceTree = "<group>"; };
+		1F125DA31EF52715003BCA78 /* AHAddViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AHAddViewController.m; sourceTree = "<group>"; };
+		1F125DA51EF52832003BCA78 /* AHBasicViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AHBasicViewController.h; sourceTree = "<group>"; };
+		1F125DA61EF52832003BCA78 /* AHBasicViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AHBasicViewController.m; sourceTree = "<group>"; };
 		1F5AA8351ECFD7EF00338E53 /* SportStory.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SportStory.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F5AA8391ECFD7EF00338E53 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		1F5AA83B1ECFD7EF00338E53 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -115,6 +127,14 @@
 			children = (
 				1F125D991EF50BD1003BCA78 /* AHMessageViewController.h */,
 				1F125D9A1EF50BD1003BCA78 /* AHMessageViewController.m */,
+				1F125D9C1EF526B5003BCA78 /* AHNearByViewController.h */,
+				1F125D9D1EF526B5003BCA78 /* AHNearByViewController.m */,
+				1F125D9F1EF526CD003BCA78 /* AHDynamicViewController.h */,
+				1F125DA01EF526CD003BCA78 /* AHDynamicViewController.m */,
+				1F125DA21EF52715003BCA78 /* AHAddViewController.h */,
+				1F125DA31EF52715003BCA78 /* AHAddViewController.m */,
+				1F125DA51EF52832003BCA78 /* AHBasicViewController.h */,
+				1F125DA61EF52832003BCA78 /* AHBasicViewController.m */,
 			);
 			name = AH;
 			sourceTree = "<group>";
@@ -532,12 +552,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				6FF242FA1EF4DA0D00AC4D16 /* PDMyViewController.m in Sources */,
+				1F125DA11EF526CD003BCA78 /* AHDynamicViewController.m in Sources */,
 				1F5AA8461ECFD7EF00338E53 /* SportStory.xcdatamodeld in Sources */,
+				1F125D9E1EF526B5003BCA78 /* AHNearByViewController.m in Sources */,
 				1FC0AC1D1EE2A54200A6481A /* UIView+Util.m in Sources */,
 				1F125D9B1EF50BD1003BCA78 /* AHMessageViewController.m in Sources */,
 				1FC0AC211EE2A96800A6481A /* AHTabBarViewController.m in Sources */,
 				1FC0AC171EE2A43400A6481A /* UIColor+Util.m in Sources */,
 				1F5AA83D1ECFD7EF00338E53 /* AppDelegate.m in Sources */,
+				1F125DA71EF52832003BCA78 /* AHBasicViewController.m in Sources */,
+				1F125DA41EF52715003BCA78 /* AHAddViewController.m in Sources */,
 				1F5AA83A1ECFD7EF00338E53 /* main.m in Sources */,
 				1FC0AC131EE2628400A6481A /* AHRootViewController.m in Sources */,
 			);
