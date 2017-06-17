@@ -7,6 +7,7 @@
 //
 
 #import "AHTabBarViewController.h"
+#import "PDMyViewController.h"
 
 @interface AHTabBarViewController ()
 
@@ -14,9 +15,25 @@
 
 @implementation AHTabBarViewController
 
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+}
+
+- (void)viewWillDisappear:(BOOL)animated
+{
+    [super viewWillDisappear:animated];
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    PDMyViewController *my = [[PDMyViewController alloc] init];
+    
+    self.viewControllers = @[
+                             my
+                             ];
 }
 
 - (void)didReceiveMemoryWarning {

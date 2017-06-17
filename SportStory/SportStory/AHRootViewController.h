@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface AHRootViewController : UIViewController
+@interface AHRootViewController : UINavigationController
 
 @end
