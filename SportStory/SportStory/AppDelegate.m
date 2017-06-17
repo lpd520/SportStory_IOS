@@ -59,17 +59,18 @@
     
     [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
     
-    NSDictionary *navbarTitleTextAttributes = @{NSForegroundColorAttributeName:[UIColor whiteColor]};
+    NSDictionary *navbarTitleTextAttributes = @{NSForegroundColorAttributeName:[UIColor blackColor]};
     [[UINavigationBar appearance] setTitleTextAttributes:navbarTitleTextAttributes];
-    [[UINavigationBar appearance] setTintColor:[UIColor whiteColor]];
+    [[UINavigationBar appearance] setTintColor:[UIColor blackColor]];
     
-    [[UITabBar appearance] setTintColor:[UIColor colorWithHex:0x24CF5F]];
-    [[UITabBarItem appearance] setTitleTextAttributes:@{NSForegroundColorAttributeName:[UIColor colorWithHex:0x24cf5f]} forState:UIControlStateSelected];
+//    0x24CF5F
+    [[UITabBar appearance] setTintColor:[UIColor colorWithHex:0xFFCE0F]];
+    [[UITabBarItem appearance] setTitleTextAttributes:@{NSForegroundColorAttributeName:[UIColor colorWithHex:0xFFCE0F]} forState:UIControlStateSelected];
     
     [[UINavigationBar appearance] setBarTintColor:[UIColor navigationbarColor]];
     [[UITabBar appearance] setBarTintColor:[UIColor titleBarColor]];
     
-    [UISearchBar appearance].tintColor = [UIColor colorWithHex:0x15A230];
+    [UISearchBar appearance].tintColor = [UIColor colorWithHex:0xFFCE0F];
     
     [[UITextField appearanceWhenContainedIn:[UISearchBar class], nil] setCornerRadius:14.0];
     [[UITextField appearanceWhenContainedIn:[UISearchBar class], nil] setAlpha:0.6];
