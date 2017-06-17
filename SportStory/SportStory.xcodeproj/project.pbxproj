@@ -8,11 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		1941872553977096B0A0483B /* libPods-SportStoryTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8707E290C3189D8252109AC9 /* libPods-SportStoryTests.a */; };
+		1F125D971EF50AA8003BCA78 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F125D961EF50AA8003BCA78 /* Assets.xcassets */; };
+		1F125D9B1EF50BD1003BCA78 /* AHMessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F125D9A1EF50BD1003BCA78 /* AHMessageViewController.m */; };
 		1F5AA83A1ECFD7EF00338E53 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F5AA8391ECFD7EF00338E53 /* main.m */; };
 		1F5AA83D1ECFD7EF00338E53 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F5AA83C1ECFD7EF00338E53 /* AppDelegate.m */; };
 		1F5AA8431ECFD7EF00338E53 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F5AA8411ECFD7EF00338E53 /* Main.storyboard */; };
 		1F5AA8461ECFD7EF00338E53 /* SportStory.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1F5AA8441ECFD7EF00338E53 /* SportStory.xcdatamodeld */; };
-		1F5AA8481ECFD7EF00338E53 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F5AA8471ECFD7EF00338E53 /* Assets.xcassets */; };
 		1F5AA84B1ECFD7EF00338E53 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F5AA8491ECFD7EF00338E53 /* LaunchScreen.storyboard */; };
 		1F5AA8561ECFD7EF00338E53 /* SportStoryTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F5AA8551ECFD7EF00338E53 /* SportStoryTests.m */; };
 		1F5AA8611ECFD7EF00338E53 /* SportStoryUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F5AA8601ECFD7EF00338E53 /* SportStoryUITests.m */; };
@@ -45,13 +46,15 @@
 /* Begin PBXFileReference section */
 		16D0A614133CE87B4BDC2B5C /* Pods-SportStoryUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SportStoryUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SportStoryUITests/Pods-SportStoryUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		18DD06626E9445CCDB19E31A /* Pods-SportStory.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SportStory.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SportStory/Pods-SportStory.debug.xcconfig"; sourceTree = "<group>"; };
+		1F125D961EF50AA8003BCA78 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1F125D991EF50BD1003BCA78 /* AHMessageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AHMessageViewController.h; sourceTree = "<group>"; };
+		1F125D9A1EF50BD1003BCA78 /* AHMessageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AHMessageViewController.m; sourceTree = "<group>"; };
 		1F5AA8351ECFD7EF00338E53 /* SportStory.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SportStory.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F5AA8391ECFD7EF00338E53 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		1F5AA83B1ECFD7EF00338E53 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		1F5AA83C1ECFD7EF00338E53 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		1F5AA8421ECFD7EF00338E53 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1F5AA8451ECFD7EF00338E53 /* SportStory.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SportStory.xcdatamodel; sourceTree = "<group>"; };
-		1F5AA8471ECFD7EF00338E53 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1F5AA84A1ECFD7EF00338E53 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1F5AA84C1ECFD7EF00338E53 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1F5AA8511ECFD7EF00338E53 /* SportStoryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SportStoryTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -107,6 +110,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1F125D981EF50BBE003BCA78 /* AH */ = {
+			isa = PBXGroup;
+			children = (
+				1F125D991EF50BD1003BCA78 /* AHMessageViewController.h */,
+				1F125D9A1EF50BD1003BCA78 /* AHMessageViewController.m */,
+			);
+			name = AH;
+			sourceTree = "<group>";
+		};
 		1F5AA82C1ECFD7EF00338E53 = {
 			isa = PBXGroup;
 			children = (
@@ -132,10 +144,10 @@
 		1F5AA8371ECFD7EF00338E53 /* SportStory */ = {
 			isa = PBXGroup;
 			children = (
+				1F125D961EF50AA8003BCA78 /* Assets.xcassets */,
 				1FC0AC1E1EE2A8CB00A6481A /* Application */,
 				1FC0AC141EE2A40500A6481A /* Utils */,
 				1FC0AC101EE2623A00A6481A /* Controllers */,
-				1F5AA8471ECFD7EF00338E53 /* Assets.xcassets */,
 				1F5AA8441ECFD7EF00338E53 /* SportStory.xcdatamodeld */,
 				1F5AA8381ECFD7EF00338E53 /* Supporting Files */,
 			);
@@ -172,6 +184,7 @@
 		1FC0AC101EE2623A00A6481A /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				1F125D981EF50BBE003BCA78 /* AH */,
 				6FF242F71EF4D9D800AC4D16 /* PD */,
 				1FC0AC111EE2628400A6481A /* AHRootViewController.h */,
 				1FC0AC121EE2628400A6481A /* AHRootViewController.m */,
@@ -354,7 +367,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1F5AA84B1ECFD7EF00338E53 /* LaunchScreen.storyboard in Resources */,
-				1F5AA8481ECFD7EF00338E53 /* Assets.xcassets in Resources */,
+				1F125D971EF50AA8003BCA78 /* Assets.xcassets in Resources */,
 				1F5AA8431ECFD7EF00338E53 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -521,6 +534,7 @@
 				6FF242FA1EF4DA0D00AC4D16 /* PDMyViewController.m in Sources */,
 				1F5AA8461ECFD7EF00338E53 /* SportStory.xcdatamodeld in Sources */,
 				1FC0AC1D1EE2A54200A6481A /* UIView+Util.m in Sources */,
+				1F125D9B1EF50BD1003BCA78 /* AHMessageViewController.m in Sources */,
 				1FC0AC211EE2A96800A6481A /* AHTabBarViewController.m in Sources */,
 				1FC0AC171EE2A43400A6481A /* UIColor+Util.m in Sources */,
 				1F5AA83D1ECFD7EF00338E53 /* AppDelegate.m in Sources */,

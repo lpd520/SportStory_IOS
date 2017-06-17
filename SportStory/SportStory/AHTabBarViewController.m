@@ -8,8 +8,9 @@
 
 #import "AHTabBarViewController.h"
 #import "PDMyViewController.h"
+#import "AHMessageViewController.h"
 
-@interface AHTabBarViewController ()
+@interface AHTabBarViewController () <UITabBarControllerDelegate>
 
 @end
 
@@ -30,10 +31,26 @@
     // Do any additional setup after loading the view.
     
     PDMyViewController *my = [[PDMyViewController alloc] init];
+    my.tabBarItem.title = @"我的";
+    my.tabBarItem.selectedImage = [UIImage imageNamed:@"my"];
+    my.tabBarItem.image = [UIImage imageNamed:@"my"];
+    
+    AHMessageViewController *message = [[AHMessageViewController alloc] init];
+    message.tabBarItem.title = @"消息";
+    message.tabBarItem.selectedImage = [UIImage imageNamed:@"message"];
+    message.tabBarItem.image = [UIImage imageNamed:@"message"];
     
     self.viewControllers = @[
+                             message,
                              my
                              ];
+    self.title = message.tabBarItem.title;
+    self.delegate = self;
+}
+
+
+- (void)tabBar:(UITabBar *)tabBar didSelectItem:(UITabBarItem *)item{
+    self.title = item.title;
 }
 
 - (void)didReceiveMemoryWarning {
