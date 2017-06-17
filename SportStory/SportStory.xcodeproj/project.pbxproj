@@ -21,6 +21,7 @@
 		1FC0AC1D1EE2A54200A6481A /* UIView+Util.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FC0AC1B1EE2A54200A6481A /* UIView+Util.m */; };
 		1FC0AC211EE2A96800A6481A /* AHTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FC0AC201EE2A96800A6481A /* AHTabBarViewController.m */; };
 		63E3BC44D8ABAE1FE4BF78DE /* libPods-SportStoryUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 618BA8F7AE8415EB3FD5468D /* libPods-SportStoryUITests.a */; };
+		6FF242FA1EF4DA0D00AC4D16 /* PDMyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FF242F91EF4DA0D00AC4D16 /* PDMyViewController.m */; };
 		A388E039F0C2CC3C5C513362 /* libPods-SportStory.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C579AA24EC2F1A9D9F8633C0 /* libPods-SportStory.a */; };
 /* End PBXBuildFile section */
 
@@ -71,6 +72,8 @@
 		618BA8F7AE8415EB3FD5468D /* libPods-SportStoryUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SportStoryUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		65287AD58CB9FC5D568AE31F /* Pods-SportStoryTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SportStoryTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SportStoryTests/Pods-SportStoryTests.debug.xcconfig"; sourceTree = "<group>"; };
 		6C7E2D915575D5D2121AEF03 /* Pods-SportStoryTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SportStoryTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SportStoryTests/Pods-SportStoryTests.release.xcconfig"; sourceTree = "<group>"; };
+		6FF242F81EF4DA0D00AC4D16 /* PDMyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PDMyViewController.h; sourceTree = "<group>"; };
+		6FF242F91EF4DA0D00AC4D16 /* PDMyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PDMyViewController.m; sourceTree = "<group>"; };
 		8707E290C3189D8252109AC9 /* libPods-SportStoryTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SportStoryTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C579AA24EC2F1A9D9F8633C0 /* libPods-SportStory.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SportStory.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E3C40FBA351C9180AD1F302B /* Pods-SportStory.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SportStory.release.xcconfig"; path = "Pods/Target Support Files/Pods-SportStory/Pods-SportStory.release.xcconfig"; sourceTree = "<group>"; };
@@ -169,6 +172,7 @@
 		1FC0AC101EE2623A00A6481A /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				6FF242F71EF4D9D800AC4D16 /* PD */,
 				1FC0AC111EE2628400A6481A /* AHRootViewController.h */,
 				1FC0AC121EE2628400A6481A /* AHRootViewController.m */,
 				1FC0AC1F1EE2A96800A6481A /* AHTabBarViewController.h */,
@@ -210,6 +214,15 @@
 				2CF8C8251AC39971AD85BB30 /* Pods-SportStoryUITests.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		6FF242F71EF4D9D800AC4D16 /* PD */ = {
+			isa = PBXGroup;
+			children = (
+				6FF242F81EF4DA0D00AC4D16 /* PDMyViewController.h */,
+				6FF242F91EF4DA0D00AC4D16 /* PDMyViewController.m */,
+			);
+			name = PD;
 			sourceTree = "<group>";
 		};
 		9E5286DDC345CC7AD006AB46 /* Frameworks */ = {
@@ -390,7 +403,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		3F4DB2F7E92BC2DB33C9F710 /* [CP] Copy Pods Resources */ = {
@@ -435,7 +448,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		E94B82498FFD860B2D8D53B4 /* [CP] Copy Pods Resources */ = {
@@ -495,7 +508,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -505,6 +518,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6FF242FA1EF4DA0D00AC4D16 /* PDMyViewController.m in Sources */,
 				1F5AA8461ECFD7EF00338E53 /* SportStory.xcdatamodeld in Sources */,
 				1FC0AC1D1EE2A54200A6481A /* UIView+Util.m in Sources */,
 				1FC0AC211EE2A96800A6481A /* AHTabBarViewController.m in Sources */,
