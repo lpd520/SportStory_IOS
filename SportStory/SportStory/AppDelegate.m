@@ -41,13 +41,14 @@
     
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     self.window.backgroundColor = [UIColor whiteColor];
+    self.tabBarVC = [[AHTabBarViewController alloc] init];
     
-    self.rootViewController = [[AHRootViewController alloc] init];
+    
+    //设置导航栏控制器
+    self.rootViewController = [[AHRootViewController alloc] initWithRootViewController:self.tabBarVC];
+    
     self.window.rootViewController = self.rootViewController;
-    
     [self.window makeKeyAndVisible];
-
-    
     
     return YES;
 }

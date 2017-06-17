@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import <CoreData/CoreData.h>
 #import "AHRootViewController.h"
+#import "AHTabBarViewController.h"
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
@@ -20,6 +21,8 @@
 
 //@property (nonatomic, strong) SCNavigationController *navigationController;
 @property (nonatomic, strong) AHRootViewController *rootViewController;
+@property (nonatomic,strong) AHTabBarViewController *tabBarVC;
+
 @property (nonatomic, assign) UINavigationController *currentNavigationController;
 
 

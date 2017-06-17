@@ -7,6 +7,7 @@
 //
 
 #import "PDMyViewController.h"
+#import <Masonry.h>
 
 @interface PDMyViewController ()
 
@@ -17,6 +18,18 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    UILabel *tLabel = [[UILabel alloc] init];
+    tLabel.text = @"测试";
+    tLabel.backgroundColor = [UIColor redColor];
+    [self.view addSubview:tLabel];
+    
+    [tLabel mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.equalTo(self.view).offset(100);
+        make.width.equalTo(@300);
+        make.height.equalTo(@100);
+    }];
+    
 }
 
 - (void)didReceiveMemoryWarning {
