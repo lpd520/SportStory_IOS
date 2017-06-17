@@ -47,10 +47,14 @@
     PDButton *Video = [[PDButton alloc] init];
     [Video setText:@"13" text:@"视频"];
     
-    
     [self.view addSubview:Fans];
     [self.view addSubview:Focus];
     [self.view addSubview:Video];
+    
+    UILabel *line = [[UILabel alloc] init];
+    line.backgroundColor = [UIColor grayColor];
+    [self.view addSubview:line];
+    
     
     
     //-----------------------------------------------------------
@@ -75,33 +79,47 @@
     
     [Fans mas_makeConstraints:^(MASConstraintMaker *make) {
 //        make.width.mas_equalTo(self.view.frame.size.width/3);
-        make.left.equalTo(self.view.mas_left);
-        make.right.equalTo(Focus.mas_left);
-        make.top.mas_equalTo(self.view.mas_top).offset(100);
-        
+        make.height.mas_equalTo(40);
         make.width.equalTo(Focus.mas_width);
-        make.bottom.mas_equalTo(self.view.mas_bottom).offset(-300);
+        
+        make.top.mas_equalTo(self.view.mas_top).offset(100);
+        make.left.equalTo(self.view.mas_left);
+//        make.right.equalTo(Focus.mas_left);
+//        make.bottom.mas_equalTo(self.view.mas_bottom).offset(-300);
 
     }];
     
     [Focus mas_makeConstraints:^(MASConstraintMaker *make) {
 //        make.width.mas_equalTo(self.view.frame.size.width/3);
-        make.top.mas_equalTo(self.view.mas_top).offset(100);
-        make.left.equalTo(Fans.mas_left);
+        make.top.equalTo(Fans.mas_top);
+        make.bottom.equalTo(Fans.mas_bottom);
+        make.width.equalTo(Video.mas_width);
+        
+//        make.top.mas_equalTo(self.view.mas_top).offset(100);
+        make.left.equalTo(Fans.mas_right);
         make.right.equalTo(Video.mas_left);
-        make.width.equalTo(Fans.mas_width);
-        make.bottom.mas_equalTo(self.view.mas_bottom).offset(-300);
+//        make.bottom.mas_equalTo(self.view.mas_bottom).offset(-300);
 
     }];
     
     [Video mas_makeConstraints:^(MASConstraintMaker *make) {
 //        make.width.mas_equalTo(self.view.frame.size.width/3);
-        make.left.equalTo(Focus.mas_left);
-        make.right.equalTo(self.view.mas_right);
-        make.top.mas_equalTo(self.view.mas_top).offset(100);
-        make.bottom.mas_equalTo(self.view.mas_bottom).offset(-300);
+        make.top.equalTo(Fans.mas_top);
+        make.bottom.equalTo(Fans.mas_bottom);
         make.width.equalTo(Focus.mas_width);
+        
+        make.left.equalTo(Focus.mas_right);
+        make.right.equalTo(self.view.mas_right);
+//        make.top.mas_equalTo(self.view.mas_top).offset(100);
+//        make.bottom.mas_equalTo(self.view.mas_bottom).offset(-300);
 
+    }];
+    
+    [line mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.height.mas_equalTo(10);
+        make.top.mas_equalTo(Video.mas_bottom).offset(7);
+        make.left.mas_equalTo(self.view.mas_left);
+        make.right.mas_equalTo(self.view.mas_right);
     }];
 
 }

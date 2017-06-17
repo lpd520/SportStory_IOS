@@ -27,6 +27,8 @@
 		1FC0AC211EE2A96800A6481A /* AHTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FC0AC201EE2A96800A6481A /* AHTabBarViewController.m */; };
 		63E3BC44D8ABAE1FE4BF78DE /* libPods-SportStoryUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 618BA8F7AE8415EB3FD5468D /* libPods-SportStoryUITests.a */; };
 		6FF242FA1EF4DA0D00AC4D16 /* PDMyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FF242F91EF4DA0D00AC4D16 /* PDMyViewController.m */; };
+		6FF243041EF549CA00AC4D16 /* PDButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FF243031EF549CA00AC4D16 /* PDButton.m */; };
+		6FF243071EF554D500AC4D16 /* PDsecondButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FF243061EF554D500AC4D16 /* PDsecondButton.m */; };
 		A388E039F0C2CC3C5C513362 /* libPods-SportStory.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C579AA24EC2F1A9D9F8633C0 /* libPods-SportStory.a */; };
 /* End PBXBuildFile section */
 
@@ -89,6 +91,10 @@
 		6C7E2D915575D5D2121AEF03 /* Pods-SportStoryTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SportStoryTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SportStoryTests/Pods-SportStoryTests.release.xcconfig"; sourceTree = "<group>"; };
 		6FF242F81EF4DA0D00AC4D16 /* PDMyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PDMyViewController.h; sourceTree = "<group>"; };
 		6FF242F91EF4DA0D00AC4D16 /* PDMyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PDMyViewController.m; sourceTree = "<group>"; };
+		6FF243021EF549CA00AC4D16 /* PDButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PDButton.h; sourceTree = "<group>"; };
+		6FF243031EF549CA00AC4D16 /* PDButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PDButton.m; sourceTree = "<group>"; };
+		6FF243051EF554D500AC4D16 /* PDsecondButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PDsecondButton.h; sourceTree = "<group>"; };
+		6FF243061EF554D500AC4D16 /* PDsecondButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PDsecondButton.m; sourceTree = "<group>"; };
 		8707E290C3189D8252109AC9 /* libPods-SportStoryTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SportStoryTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C579AA24EC2F1A9D9F8633C0 /* libPods-SportStory.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SportStory.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E3C40FBA351C9180AD1F302B /* Pods-SportStory.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SportStory.release.xcconfig"; path = "Pods/Target Support Files/Pods-SportStory/Pods-SportStory.release.xcconfig"; sourceTree = "<group>"; };
@@ -252,8 +258,12 @@
 		6FF242F71EF4D9D800AC4D16 /* PD */ = {
 			isa = PBXGroup;
 			children = (
+				6FF243021EF549CA00AC4D16 /* PDButton.h */,
+				6FF243031EF549CA00AC4D16 /* PDButton.m */,
 				6FF242F81EF4DA0D00AC4D16 /* PDMyViewController.h */,
 				6FF242F91EF4DA0D00AC4D16 /* PDMyViewController.m */,
+				6FF243051EF554D500AC4D16 /* PDsecondButton.h */,
+				6FF243061EF554D500AC4D16 /* PDsecondButton.m */,
 			);
 			name = PD;
 			sourceTree = "<group>";
@@ -561,9 +571,11 @@
 				1FC0AC171EE2A43400A6481A /* UIColor+Util.m in Sources */,
 				1F5AA83D1ECFD7EF00338E53 /* AppDelegate.m in Sources */,
 				1F125DA71EF52832003BCA78 /* AHBasicViewController.m in Sources */,
+				6FF243071EF554D500AC4D16 /* PDsecondButton.m in Sources */,
 				1F125DA41EF52715003BCA78 /* AHAddViewController.m in Sources */,
 				1F5AA83A1ECFD7EF00338E53 /* main.m in Sources */,
 				1FC0AC131EE2628400A6481A /* AHRootViewController.m in Sources */,
+				6FF243041EF549CA00AC4D16 /* PDButton.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

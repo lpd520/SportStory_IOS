@@ -27,11 +27,10 @@
     if(self = [super init]){
         
         
-        
         self.label1 = [[UILabel alloc] init];
         self.label2 = [[UILabel alloc] init];
         
-        self.label1.font = [UIFont systemFontOfSize:15.0];
+        self.label1.font = [UIFont systemFontOfSize:14.0];
         self.label2.font = [UIFont systemFontOfSize:10.0];
 
         self.label1.textAlignment = NSTextAlignmentCenter;
@@ -53,6 +52,8 @@
         [self.label2 mas_makeConstraints:^(MASConstraintMaker *make) {
             
             make.height.equalTo(self.label1.mas_height);
+            
+            make.top.equalTo(self.label1.mas_bottom);
             make.left.mas_equalTo(self.mas_left);
             make.bottom.mas_equalTo(self.mas_bottom);
             make.right.mas_equalTo(self.mas_right);
